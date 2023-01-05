@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.img{
+    background-image: url(./img/cbg.jpg);
+    background-repeat:  no-repeat ;
+    background-size: 120%;
+    
+}
+nav{
+    /*background-color: aqua;*/
+    display: flex;
+    justify-content: space-between;
+    padding:0px 70px;
+}
+nav ul{
+    
+    font-size: 16px;
+    margin-right :20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav span{
+    
+    font-size: 30px;
+    padding: 25px 35px;
+    border-radius: 0px 0px 50px 50px;
+    background-color: rgba(180, 175, 175, 0.2);
+}
+nav ul li{
+    
+    margin-right: 15px;
+    color: rgba(255, 255, 255, 0.661);
+    transition: all ease-in-out 0.3s;
+}
+/*nav ul i{
+    font-size: 20px;
+    border-radius: 40px;
+}*/
+nav ul button {
+    margin-right: 15px;
+    background-color: rgb(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 50px;
+    height: 32px;
+    width: 32px;
+    color: white;
+    font-size: 20px;
+    transition: all ease-in-out 0.3s;
+}
+nav ul button:hover{
+     background-color: rgba(225,225, 225, 0.4);
+}
+nav ul li:hover{
+    color:white;
+    text-decoration: underline;
+}
+
+.hero{
+    padding: 80px 130px;
+    color: white;
+}
+
+.first-line{
+background-color: rgb(98, 168, 253,0.2);
+font-size: 13px;
+border-radius: 25px;
+padding:10px 20px;
+color:rgb(98, 168, 253);
+
+}
+h1{
+    font-size: 50px;
+    line-height: 50px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 900;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    
+   /* font-size: 2em;
+    font-weight: 900;*/
+    
+}
+h1 span{
+    color:  rgb(98, 168, 253);
+    text-decoration: underline;
+}
+.para{
+    border-left:5px solid rgb(98, 168, 253);
+    font-size: 15px;
+    padding-left: 15px;
+    margin-bottom: 35px;
+    color:rgb(134, 162, 196);
+}
+.btn-box{
+    display: flex;
+    align-items: center;
+}
+.btn-box button{
+    height: 52px;
+    width: 160px;
+    border-radius: 8px;
+    color: white;
+    border:1px solid rgb(45, 59, 78);
+    margin-right: 40px;
+    transition: all ease-in-out 0.3s;
+    background-color: #212392;
+    /*background-image: linear-gradient(to right, rgb(98, 168, 253), rgb(38, 49, 204));*/
+    
+ 
+
+}
+.btn-box button:hover {
+    background: rgb(53, 117, 196);;
+    border: 1px solid #a3a3c0;
+    font-size: 14px;
+}
+.btn-box span p{
+    font-size: 14px;
+    color: rgb(126, 165, 212);;
+}
+.btn-box span{
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.btn-box div{
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 50px;
+    background-color: #6b6ba3;
+}
+@media(max-width:768px){
+    .img{
+        background-size:cover;
+    }
+    nav button{
+       margin-right: 10px;
+       
+    }
+    nav ul li{
+        display: none;
+    }
+}
